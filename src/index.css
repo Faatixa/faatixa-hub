@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* Scroll reveal utility */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+.reveal.reveal-visible{opacity:1;transform:translateY(0)}
