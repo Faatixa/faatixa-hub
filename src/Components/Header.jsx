@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { assets } from "../assets/assets"
 
 function Header(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,9 +11,7 @@ function Header(){
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                        <div className="text-2xl font-bold text-[#4d0a0a]">
-                            Faatixa
-                        </div>
+                        <img className="w-32 h-32" src={assets.logo} alt="Faatixa Logo" />
                     </Link>
 
                     {/* Desktop Navigation */}
